@@ -1,24 +1,26 @@
 {
-  "devDependencies": {
-    "@anijs/eslint-config": "^0.3.0",
-    "@anijs/prettier": "^1.0.3",
-    "lerna": "^4.0.0"
-  },
-  "private": "true",
   "name": "cli-monorepo",
-  "description": "",
   "version": "1.0.0",
-  "main": ".prettierrc.js",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
-  },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anijs6/cli-monorepo.git"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@anijs/eslint-config": "^0.4.0",
+    "@anijs/prettier": "^1.0.3",
+    "eslint": "^8.2.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "private": "true",
   "bugs": {
     "url": "https://github.com/anijs6/cli-monorepo/issues"
   },

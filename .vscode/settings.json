@@ -1,4 +1,6 @@
 {
+  // 指定typescript server
+  "typescript.tsdk": "node_modules/typescript/lib",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -17,5 +19,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "yml",
+    "yaml"
+  ]
 }
