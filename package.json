@@ -10,12 +10,16 @@
   },
   "author": "",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@anijs/eslint-config": "^0.4.0",
     "@anijs/prettier": "^1.0.3",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "eslint": "^8.2.0",
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
