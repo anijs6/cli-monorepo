@@ -1,0 +1,15 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers:
+      '@anijs/prettier': ^1.0.3
+    devDependencies:
+      '@anijs/prettier': 1.0.3
+
+packages:
+
+  /@anijs/prettier/1.0.3:
+    resolution: {integrity: sha512-G3Y++IaAj1c3oKpOaiWVsBSWNtDF4hBZr91VHu4RpyFR5bfIERpzDHwepuWmw1QayUJsXTDAhVNc/qdEjzNFoA==, tarball: '@anijs/prettier/download/@anijs/prettier-1.0.3.tgz'}
+    dev: true

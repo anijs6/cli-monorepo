@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@anijs/prettier": "^1.0.3"
+  },
+	"private":"true",
+  "name": "cli-monorepo",
+  "description": "",
+  "version": "1.0.0",
+  "main": ".prettierrc.js",
+  "dependencies": {},
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anijs6/cli-monorepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anijs6/cli-monorepo/issues"
+  },
+  "homepage": "https://github.com/anijs6/cli-monorepo#readme",
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=6"
+  }
+}
