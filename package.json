@@ -1,13 +1,14 @@
 {
   "devDependencies": {
-    "@anijs/prettier": "^1.0.3"
+    "@anijs/eslint-config": "^0.3.0",
+    "@anijs/prettier": "^1.0.3",
+    "lerna": "^4.0.0"
   },
-	"private":"true",
+  "private": "true",
   "name": "cli-monorepo",
   "description": "",
   "version": "1.0.0",
   "main": ".prettierrc.js",
-  "dependencies": {},
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },
