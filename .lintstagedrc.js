@@ -3,7 +3,8 @@
 module.exports = {
   '*.{json,md,yml,css,js,ts}': filenames =>
     filenames.map(filename => {
-      console.log(filename)
-      return ''
+      return `
+        prettier --write ${filename}
+      `
     })
 }
