@@ -1,0 +1,19 @@
+{
+  "name": "@anijs/webpack-common-config",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-merge": "^5.8.0"
+  }
+}

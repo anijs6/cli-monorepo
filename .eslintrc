@@ -1,49 +1,26 @@
 {
   "root": true,
   "extends": ["@anijs"],
-  "rules": {
-    /** 开头是pre的变量，可以被重新赋值 */
-    "no-param-reassign": [
-      "error",
-      {
-        "props": true,
-        "ignorePropertyModificationsForRegex": ["^pre"]
-      }
-    ],
-    /** 允许使用array.reduce */
-    "unicorn/no-array-reduce": "off",
-    /** 允许直接使用__dirname */
-    "unicorn/prefer-module": "off",
-    /** 关闭通过协议使用包：require('node:path') */
-    "unicorn/prefer-node-protocol": "off",
-    /** 允许function和class先使用再申明 */
-    "no-use-before-define": [
-      "error",
-      { "functions": false, "classes": false }
-    ],
-    /**
-     * 忽略特殊文件不是从”dependencies“加载依赖项
-     * 比如vite.config.ts可以从”devDependencies“中加载依赖项vite
-     */
-    "import/no-extraneous-dependencies": [
-      "error",
-      { "devDependencies": ["vite.config.ts"] }
-    ],
-    /**
-     * ts文件不需要定义jsdoc类型
-     */
-    "jsdoc/no-types": ["error", { "contexts": ["any"] }],
-    "jsdoc/require-param-type": "off",
-    "jsdoc/require-returns-type": "off"
-  },
-  "overrides": [
-    {
-      "files": ["*.js"],
-      "rules": {
-        "jsdoc/no-types": "off",
-        "jsdoc/require-param-type": "error",
-        "jsdoc/require-returns-type": "error"
-      }
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".tsx", ".ts", ".js", ".json"]
+      },
+      "alias": {
+        "map": [["@", "./src/"]]
+      },
+      "typescript": {}
     }
-  ]
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never"
+      }
+    ]
+  }
 }
