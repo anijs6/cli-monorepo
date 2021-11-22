@@ -1,6 +1,6 @@
 import type { Configuration } from 'webpack'
 import { merge } from 'webpack-merge'
-import { baseConfig, htmlConfig, svgConfig } from './lib'
+import { baseConfig, htmlConfig, svgConfig, imageConfig } from './lib'
 import type { CommonConfigOptions } from './webpack.interface'
 
 /**
@@ -8,7 +8,7 @@ import type { CommonConfigOptions } from './webpack.interface'
  * @returns webpack公共配置
  */
 function getCommonConfig(options: CommonConfigOptions): Configuration {
-  return merge(baseConfig(options), htmlConfig(options), svgConfig(options))
+  return merge(baseConfig(options), htmlConfig(options), svgConfig(options), imageConfig(options))
 }
 
 export default getCommonConfig
