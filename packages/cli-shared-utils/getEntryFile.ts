@@ -17,10 +17,12 @@ function getEntryFile(options?: EntryFileOptions): string {
     context = process.cwd(),
     entryDirectorys = defaultEntryDirectorys,
     entryFileNames = defaultEntryFileNames,
-    entryFileExtensions = defaultEntryFileExtensions
+    entryFileExtensions = defaultEntryFileExtensions,
+    files = []
   } = options || {}
 
-  const entryFiles = combineArray(entryDirectorys, entryFileNames, entryFileExtensions)
+  const entryFiles =
+    files.length > 0 ? files : combineArray(entryDirectorys, entryFileNames, entryFileExtensions)
   const entryFile = entryFiles.find(file => fsExtra.pathExistsSync(path.resolve(context, file)))
   return entryFile || ''
 }
@@ -67,7 +69,7 @@ function jointPath(itemList: Array<string>): string {
   }, '')
 }
 
-interface EntryFileOptions {
+interface EntryFileCombineItemsOptions {
   /**
    * 执行查找的上下文
    *
@@ -79,19 +81,39 @@ interface EntryFileOptions {
    *
    * @default entryDirectorys
    */
-  entryDirectorys: Array<string>
+  entryDirectorys?: Array<string>
   /**
    * 执行查找的文件名字
    *
    * @default ['index', 'main', 'app']
    */
-  entryFileNames: Array<string>
+  entryFileNames?: Array<string>
   /**
    * 执行查找的文件后缀名
    *
    * @default ['.ts', '.tsx', '.js', 'jsx']
    */
-  entryFileExtensions: Array<`.${string}`>
+  entryFileExtensions?: Array<`.${string}`>
+  files?: never
 }
+interface EntryFileItemsOptions {
+  /**
+   * 执行查找的上下文
+   *
+   * @default process.cwd()
+   */
+  context?: string
+  /**
+   * 优先级文件列表
+   *
+   * @example
+   * ['src/main.ts', 'src/app.tsx']
+   */
+  files: Array<`${string}.${string}`>
+  entryDirectorys?: never
+  entryFileNames?: never
+  entryFileExtensions?: never
+}
+type EntryFileOptions = EntryFileCombineItemsOptions | EntryFileItemsOptions
 
 export default getEntryFile
