@@ -1,6 +1,6 @@
-/* eslint-disable no-use-before-define */
 import type { Configuration } from 'webpack'
-import { theBase } from './lib'
+import { merge } from 'webpack-merge'
+import { baseConfig, htmlConfig, svgConfig } from './lib'
 import type { CommonConfigOptions } from './webpack.interface'
 
 /**
@@ -8,9 +8,7 @@ import type { CommonConfigOptions } from './webpack.interface'
  * @returns webpack公共配置
  */
 function getCommonConfig(options: CommonConfigOptions): Configuration {
-  return {
-    ...theBase(options)
-  }
+  return merge(baseConfig(options), htmlConfig(options), svgConfig(options))
 }
 
 export default getCommonConfig

@@ -8,7 +8,7 @@ import type { CommonConfigOptions } from '../webpack.interface'
  * @param options 配置数据
  * @returns webpack基础配置
  */
-export default function theBase(options: CommonConfigOptions): Configuration {
+export default function baseConfig(options: CommonConfigOptions): Configuration {
   const { mode } = options || {}
 
   const entry = options.entryConfig || formateEntry(getEntryFile())

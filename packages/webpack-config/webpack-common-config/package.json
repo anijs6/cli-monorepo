@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@anijs/cli-shared-utils": "^1.0.0",
-    "html-webpack-plugin": "^5.5.0"
+    "ejs-webpack-loader": "^2.2.2",
+    "html-webpack-plugin": "^5.5.0",
+    "svg-sprite-loader": "^6.0.11"
   },
   "devDependencies": {
     "webpack": "^5.64.1",
