@@ -5,7 +5,7 @@ import type { CommonConfigOptions } from '../webpack.interface'
 /**
  * 基础配置
  *
- * @param options 传递数据
+ * @param options 配置数据
  * @returns webpack基础配置
  */
 export default function theBase(options: CommonConfigOptions): Configuration {
