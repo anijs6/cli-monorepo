@@ -21,6 +21,8 @@
         "tsx": "never",
         "js": "never"
       }
-    ]
+    ],
+    "unicorn/filename-case": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
 }

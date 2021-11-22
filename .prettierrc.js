@@ -1,3 +1,6 @@
 const prettierConfig = require('@anijs/prettier')
 
-module.exports = prettierConfig
+module.exports = {
+  ...prettierConfig,
+  printWidth: 110
+}

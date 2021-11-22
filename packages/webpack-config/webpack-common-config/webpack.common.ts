@@ -8,6 +8,7 @@ import type { Configuration } from 'webpack'
 function getCommonConfig(options: CommonConfigOptions): Configuration {
   const { mode } = options || {}
 
+  const entry = options.entryConfig ||
   return {
     context: process.cwd(),
     mode,
@@ -17,6 +18,8 @@ function getCommonConfig(options: CommonConfigOptions): Configuration {
 
 interface CommonConfigOptions {
   mode: 'development' | 'production'
+  /** webpack entry配置 */
+  entryConfig?: Configuration['entry']
 }
 
 export default getCommonConfig
