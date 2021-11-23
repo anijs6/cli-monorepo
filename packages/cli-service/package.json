@@ -16,11 +16,15 @@
     "@anijs/cli-webpack-config": "^1.0.0",
     "chalk": "^4.1.2",
     "commander": "^8.3.0",
-    "webpack": "^5.64.1"
+    "webpack": "^5.64.1",
+    "webpack-dev-server": "^4.5.0"
   },
   "pnpm": {
     "overrides": {
       "@anijs/cli-webpack-config": "workspace:*"
     }
+  },
+  "devDependencies": {
+    "@types/webpack-dev-server": "^4.5.0"
   }
 }
