@@ -23,6 +23,8 @@
       }
     ],
     "unicorn/filename-case": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-console": "off",
+    "no-new": "off"
   }
 }

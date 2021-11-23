@@ -1,5 +1,5 @@
 {
-  "name": "@anijs/webpack-common-config",
+  "name": "@anijs/cli-webpack-config",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -19,6 +19,7 @@
     "svg-sprite-loader": "^6.0.11"
   },
   "devDependencies": {
+    "@types/webpack": "^5.28.0",
     "webpack": "^5.64.1",
     "webpack-merge": "^5.8.0"
   },
