@@ -25,6 +25,13 @@
     "unicorn/filename-case": "off",
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-console": "off",
-    "no-new": "off"
+    "no-new": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/etsc.config.js"]
+      }
+    ],
+    "@typescript-eslint/no-var-requires": "off"
   }
 }

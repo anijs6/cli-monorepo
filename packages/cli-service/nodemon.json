@@ -1,0 +1,7 @@
+{
+  "watch": ["lib", "bin"],
+  "ignore": ["lib/**/*.test.ts"],
+  "ext": "ts",
+  "exec": "etsc",
+  "legacyWatch": true
+}
