@@ -19,7 +19,8 @@
       {
         "ts": "never",
         "tsx": "never",
-        "js": "never"
+        "js": "never",
+        "d.ts": "never"
       }
     ],
     "unicorn/filename-case": "off",
@@ -32,6 +33,7 @@
         "devDependencies": ["**/etsc.config.js"]
       }
     ],
-    "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "no-restricted-exports": "off"
   }
 }
