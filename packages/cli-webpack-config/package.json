@@ -1,6 +1,6 @@
 {
   "name": "@anijs/cli-webpack-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -13,7 +13,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@anijs/cli-shared-utils": "^1.0.0",
+    "@anijs/cli-shared-utils": "^1.0.1",
     "ejs-webpack-loader": "^2.2.2",
     "html-webpack-plugin": "^5.5.0",
     "svg-sprite-loader": "^6.0.11"
