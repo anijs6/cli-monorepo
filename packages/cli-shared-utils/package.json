@@ -12,5 +12,6 @@
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
     "fs-extra": "^10.0.0"
-  }
+  },
+  "gitHead": "04cf05c5a8082f3f7c78114253956c278ac30b0d"
 }

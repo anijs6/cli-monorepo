@@ -10,8 +10,7 @@
   },
   "author": "",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install"
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@anijs/eslint-config": "^0.5.0",

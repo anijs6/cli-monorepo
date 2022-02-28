@@ -31,5 +31,6 @@
     "esbuild-node-tsc": "^1.8.1",
     "esbuild-plugin-tsc": "^0.3.0",
     "nodemon": "^2.0.15"
-  }
+  },
+  "gitHead": "04cf05c5a8082f3f7c78114253956c278ac30b0d"
 }
